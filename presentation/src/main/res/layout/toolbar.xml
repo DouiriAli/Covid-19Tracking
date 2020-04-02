@@ -23,4 +23,11 @@
         android:textSize="@dimen/font_large"
         android:textStyle="bold" />
 
+    <ImageView
+        android:id="@+id/choose_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_language" />
+
 </RelativeLayout>

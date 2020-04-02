@@ -26,7 +26,7 @@ class CountryCasesFragment : BaseFragment() {
     override fun setUp() {
         val country = arguments?.getParcelable<Country>(KEY_EXTRA_COUNTRY_CASES)
 
-        (activity as CountryCasesActivity).setTitleToolbar("${getString(R.string.app_name)} - ${country?.countryName}")
+        (activity as CountryCasesActivity).setTitleToolbar("${getString(R.string.covid19)} - ${country?.countryName}")
 
         val DeathsPerCases = country?.deaths?.toDouble()?.div(country.cases.toDouble())?.times(100)
         val RecovredPerCases =
