@@ -97,7 +97,6 @@ class ChooseLanguageFragment : BaseFragment() {
     private fun next() {
         sharedPref?.put(KEY_LANGUAGE, languageSelected)
         languageSelected?.let { activity?.let { it1 -> Utils.setLocale(it1, it) } }
-        (activity as CountryCasesActivity).showLanguageOption()
         navigateTo(CountriesFragment().newInstance(), false)
     }
 

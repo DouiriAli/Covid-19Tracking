@@ -11,9 +11,10 @@ class SplashScreenActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
+        setUp()
     }
 
-    override fun setUp() {
+    private fun setUp() {
         Handler().postDelayed({
             navigateTo(CountryCasesActivity())
         }, DELAY_SPLASH_SCREEN)

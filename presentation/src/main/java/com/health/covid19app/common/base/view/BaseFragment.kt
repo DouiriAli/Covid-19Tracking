@@ -27,6 +27,8 @@ abstract class BaseFragment : Fragment(), IView {
         setUp()
     }
 
+    abstract fun setUp()
+
     fun getActivityComponent(): ActivitySubComponent? =
         activity?.getActivityComponent()
 

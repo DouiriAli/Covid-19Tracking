@@ -1,8 +1,6 @@
 package com.health.covid19app.common.base.view
 
 interface IView {
-    fun setUp()
-
     fun showLoading()
 
     fun hideLoading()

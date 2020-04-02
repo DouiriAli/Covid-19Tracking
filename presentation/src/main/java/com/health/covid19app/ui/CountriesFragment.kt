@@ -49,6 +49,7 @@ class CountriesFragment : BaseFragment(), CountriesContract.ViewContract,
 
     override fun setUp() {
         (activity as CountryCasesActivity).setTitleToolbar(getString(R.string.choose_country))
+        (activity as CountryCasesActivity).showLanguageOption()
         presenter.getCountryCases()
         recycler_view.layoutManager = LinearLayoutManager(activity)
         recycler_view.setHasFixedSize(true)

@@ -17,9 +17,10 @@ class CountryCasesActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_country_cases)
+        setUp()
     }
 
-    override fun setUp() {
+    private fun setUp() {
 
         val sharedPref = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
         val currentLanguage = sharedPref?.get(KEY_LANGUAGE, "")
@@ -52,7 +53,7 @@ class CountryCasesActivity : BaseActivity() {
     }
 
     fun showLanguageOption() {
-        choose_language.visibility = View.GONE
+        choose_language.visibility = View.VISIBLE
     }
 
     private fun chooseLanguage() {

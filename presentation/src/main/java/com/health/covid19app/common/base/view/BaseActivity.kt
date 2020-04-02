@@ -22,11 +22,6 @@ abstract class BaseActivity : AppCompatActivity(), IView {
         activityComponent = (application as Covid19App).createActivityComponent(this)
     }
 
-    override fun onResume() {
-        super.onResume()
-        setUp()
-    }
-
     fun getActivityComponent(): ActivitySubComponent {
         return activityComponent
     }
