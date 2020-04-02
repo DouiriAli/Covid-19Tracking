@@ -144,7 +144,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="@dimen/spacing_normal"
-                        android:weightSum="2">
+                        android:weightSum="3">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -159,7 +159,7 @@
                             android:id="@+id/cases_today"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:gravity="right"
                             android:textSize="@dimen/font_medium"
                             android:textStyle="bold" />
@@ -176,7 +176,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="@dimen/spacing_normal"
-                        android:weightSum="2">
+                        android:weightSum="3">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -191,7 +191,7 @@
                             android:id="@+id/deaths_today"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:gravity="right"
                             android:textSize="@dimen/font_medium"
                             android:textStyle="bold" />
@@ -236,7 +236,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="@dimen/spacing_normal"
-                        android:weightSum="2">
+                        android:weightSum="3">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -251,7 +251,7 @@
                             android:id="@+id/cases_total"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:gravity="right"
                             android:textSize="@dimen/font_medium"
                             android:textStyle="bold" />
@@ -268,7 +268,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="@dimen/spacing_normal"
-                        android:weightSum="2">
+                        android:weightSum="3">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -283,7 +283,7 @@
                             android:id="@+id/deaths_total"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:gravity="right"
                             android:textSize="@dimen/font_medium"
                             android:textStyle="bold" />
@@ -300,7 +300,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="@dimen/spacing_normal"
-                        android:weightSum="2">
+                        android:weightSum="3">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -315,7 +315,7 @@
                             android:id="@+id/recovred_total"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:gravity="right"
                             android:textSize="@dimen/font_medium"
                             android:textStyle="bold" />
@@ -332,7 +332,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="@dimen/spacing_normal"
-                        android:weightSum="2">
+                        android:weightSum="3">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -347,7 +347,7 @@
                             android:id="@+id/critical_total"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:gravity="right"
                             android:textSize="@dimen/font_medium"
                             android:textStyle="bold" />

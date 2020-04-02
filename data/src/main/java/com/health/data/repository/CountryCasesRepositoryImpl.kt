@@ -17,5 +17,5 @@ class CountryCasesRepositoryImpl(
     }
 
     override fun getCountryCases(): Observable<MutableList<Country>> =
-        dataStore.getCountryCases().map { mapper.transformCountryEntityCollection(it) }
+        dataStore.getCountryCases().map { mapper.transformCountryEntityCollection(it.asReversed()) }
 }

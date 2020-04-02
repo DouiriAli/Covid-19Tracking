@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface RemoteService {
 
-    @GET("countries")
+    @GET("countries/?sort=country")
     fun getCountryCases(): Observable<MutableList<CountryEntity>>
 
 }
