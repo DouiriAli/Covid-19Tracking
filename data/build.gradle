@@ -40,6 +40,9 @@ dependencies {
     // Retrofit
     implementation retrofitDependencies.retrofit
 
+    // Gson
+    implementation gson
+
     // Testing
     testImplementation testingDependencies.junit
 }

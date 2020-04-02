@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">Today</string>
+    <string name="general_informations">General information</string>
+    <string name="cases_today">Confirmed cases</string>
+    <string name="deaths_today">Death</string>
+    <string name="cases_total">Total confirmed cases</string>
+    <string name="deaths_total">Total Deaths</string>
+    <string name="recovred_total">Total cured cases</string>
+    <string name="critical_total">Total critical cases</string>
+    <string name="choose_country">Choose your country</string>
+    <string name="death_rate">Death rate</string>
+    <string name="cure_rate">Healing rate</string>
+    <string name="french_language">Français</string>
+    <string name="english_language">English</string>
+    <string name="spanish_language">Espagnol</string>
+    <string name="choose_language_title">Choose your language</string>
+</resources>

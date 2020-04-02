@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Covid-19Tracking</string>
+    <string name="covid19">Covid-19</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="general_informations">Informations générale</string>
+    <string name="cases_today">Cas confirmés</string>
+    <string name="deaths_today">Décès</string>
+    <string name="cases_total">Total des cas confirmés</string>
+    <string name="deaths_total">Total des cas Décès</string>
+    <string name="recovred_total">Total des cas guéris</string>
+    <string name="critical_total">Total des cas critiques</string>
+    <string name="choose_country">Séléctionnez votre pays</string>
+    <string name="death_rate">Taux de mortalité</string>
+    <string name="cure_rate">Taux de guérison</string>
+    <string name="french_language">Français</string>
+    <string name="english_language">Anglais</string>
+    <string name="spanish_language">Espanol</string>
+    <string name="choose_language_title">Choisissez votre langue</string>
+</resources>
