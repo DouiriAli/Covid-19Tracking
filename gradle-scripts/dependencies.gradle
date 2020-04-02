@@ -15,8 +15,9 @@ ext {
     rxAndroidVersion        = '2.1.1'
     retrofitVersion         = '2.6.1'
     daggerVersion           = '2.24'
+    glideVersion            = '4.11.0'
+    gsonVersion             = '2.8.0'
     androidMaterialVersion  = '1.1.0-alpha06'
-
 
     // Testing
     junitVersion        = '4.12'
@@ -26,6 +27,8 @@ ext {
     appCompatPackage        = 'androidx.appcompat'
     coreKTXPPackage         = 'androidx.core'
     androidMaterialPackage  = 'com.google.android.material'
+    gsonPackage             = 'com.google.code.gson'
+    glidePackage            = 'com.github.bumptech.glide'
     reactivePackage         = 'io.reactivex.rxjava2'
     daggerPackage           = 'com.google.dagger'
     retrofitPackage         = 'com.squareup.retrofit2'
@@ -55,7 +58,13 @@ ext {
             retrofitAdapter: buildDependency(retrofitPackage, 'adapter-rxjava2', retrofitVersion)
     ]
 
+    glideDependencies = [
+            glide: buildDependency(glidePackage, 'glide', glideVersion),
+            compiler:buildDependency(glidePackage, 'compiler', glideVersion)
+    ]
+
     material    = buildDependency(androidMaterialPackage, 'material', androidMaterialVersion)
+    gson        = buildDependency(gsonPackage, 'gson', gsonVersion)
 
     testingDependencies = [
             junit      : buildDependency(junitPackage, 'junit', junitVersion)
