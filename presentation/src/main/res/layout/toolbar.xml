@@ -7,13 +7,19 @@
     android:minHeight="?attr/actionBarSize"
     android:padding="@dimen/spacing_normal">
 
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back" />
+
     <TextView
         android:id="@+id/toolbar_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Toolbar Title"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorBlack"
         android:textSize="@dimen/font_large"
         android:textStyle="bold" />
 

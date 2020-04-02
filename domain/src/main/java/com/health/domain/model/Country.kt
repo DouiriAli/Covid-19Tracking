@@ -1,27 +1,31 @@
 package com.health.domain.model
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Country(
-    val country: String,
+    val countryName: String,
 
     val countryInfo: CountryInfo,
 
-    val cases: Int,
+    val cases: Long,
 
-    val todayCases: Int,
+    val todayCases: Long,
 
-    val deaths: Int,
+    val deaths: Long,
 
-    val todayDeaths: Int,
+    val todayDeaths: Long,
 
-    val recovered: Int,
+    val recovered: Long,
 
-    val active: Int,
+    val active: Long,
 
-    val critical: Int,
+    val critical: Long,
 
-    val casesPerOneMillion: Int,
+    val casesPerOneMillion: Double,
 
-    val deathsPerOneMillion: Int,
+    val deathsPerOneMillion: Double,
 
     val updated: Long
-)
+) : Parcelable

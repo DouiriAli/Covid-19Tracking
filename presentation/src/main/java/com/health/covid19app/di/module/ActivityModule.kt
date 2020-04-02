@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import com.health.covid19app.common.ASyncTransformer
 import com.health.covid19app.di.scope.ActivityScope
-import com.health.covid19app.ui.CountryCasesContract
-import com.health.covid19app.ui.CountryCasesPresenter
+import com.health.covid19app.ui.CountriesContract
+import com.health.covid19app.ui.CountriesPresenter
 import com.health.domain.repository.CountryCasesRepository
 import com.health.domain.usecases.GetCountryCasesUseCase
 import dagger.Module
@@ -33,6 +33,6 @@ class ActivityModule(private val activity: AppCompatActivity) {
     @ActivityScope
     fun provideCountryCasesPresenter(
         countryCasesUseCase: GetCountryCasesUseCase
-    ): CountryCasesContract.PresenterContract =
-        CountryCasesPresenter(countryCasesUseCase)
+    ): CountriesContract.PresenterContract =
+        CountriesPresenter(countryCasesUseCase)
 }

@@ -6,7 +6,7 @@ import com.health.domain.model.Country
 import com.health.domain.model.CountryInfo
 
 fun CountryEntity.transform(): Country = Country(
-    country = country,
+    countryName = country,
     countryInfo = countryInfo.transform(),
     cases = cases,
     todayCases = todayCases,

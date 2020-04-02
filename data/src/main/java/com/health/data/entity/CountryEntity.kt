@@ -10,31 +10,31 @@ data class CountryEntity(
     val countryInfo: CountryInfoEntity,
 
     @SerializedName("cases")
-    val cases: Int,
+    val cases: Long,
 
     @SerializedName("todayCases")
-    val todayCases: Int,
+    val todayCases: Long,
 
     @SerializedName("deaths")
-    val deaths: Int,
+    val deaths: Long,
 
     @SerializedName("todayDeaths")
-    val todayDeaths: Int,
+    val todayDeaths: Long,
 
     @SerializedName("recovered")
-    val recovered: Int,
+    val recovered: Long,
 
     @SerializedName("active")
-    val active: Int,
+    val active: Long,
 
     @SerializedName("critical")
-    val critical: Int,
+    val critical: Long,
 
     @SerializedName("casesPerOneMillion")
-    val casesPerOneMillion: Int,
+    val casesPerOneMillion: Double,
 
     @SerializedName("deathsPerOneMillion")
-    val deathsPerOneMillion: Int,
+    val deathsPerOneMillion: Double,
 
     @SerializedName("updated")
     val updated: Long

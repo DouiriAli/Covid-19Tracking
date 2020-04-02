@@ -20,6 +20,10 @@ abstract class BaseActivity : AppCompatActivity(), IView {
     override fun onCreate(@Nullable savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityComponent = (application as Covid19App).createActivityComponent(this)
+    }
+
+    override fun onResume() {
+        super.onResume()
         setUp()
     }
 

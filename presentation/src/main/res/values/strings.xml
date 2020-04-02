@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Covid19App</string>
+    <string name="app_name">Covid-19Tracking</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="general_informations">Informations générale</string>
+    <string name="cases_today">Cas confirmés</string>
+    <string name="deaths_today">Décès</string>
+    <string name="cases_total">Total des cas confirmés</string>
+    <string name="deaths_total">Total des cas Décès</string>
+    <string name="recovred_total">Total des cas guéris</string>
+    <string name="critical_total">Total des cas critiques</string>
+    <string name="choose_country">Séléctionnez votre pays</string>
+    <string name="death_rate">Taux de mortalité</string>
+    <string name="cure_rate">Taux de guérison</string>
 </resources>

@@ -4,9 +4,9 @@ import android.util.Log
 import com.health.covid19app.common.base.presenter.BasePresenter
 import com.health.domain.usecases.GetCountryCasesUseCase
 
-class CountryCasesPresenter(private val usecase: GetCountryCasesUseCase) :
-    BasePresenter<CountryCasesContract.ViewContract>(),
-    CountryCasesContract.PresenterContract {
+class CountriesPresenter(private val usecase: GetCountryCasesUseCase) :
+    BasePresenter<CountriesContract.ViewContract>(),
+    CountriesContract.PresenterContract {
 
     override fun getCountryCases() {
         view?.showLoading()

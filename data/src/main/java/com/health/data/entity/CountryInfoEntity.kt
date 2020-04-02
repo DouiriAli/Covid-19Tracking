@@ -7,10 +7,10 @@ data class CountryInfoEntity(
     val id: Int,
 
     @SerializedName("iso2")
-    val iso2: String,
+    val iso2: String? = null,
 
     @SerializedName("iso3")
-    val iso3: String,
+    val iso3: String? = null,
 
     @SerializedName("lat")
     val lat: Double,
@@ -19,5 +19,5 @@ data class CountryInfoEntity(
     val long: Double,
 
     @SerializedName("flag")
-    val flag: Double
+    val flag: String
 )
