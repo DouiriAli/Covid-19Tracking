@@ -2,6 +2,7 @@ package com.health.covid19app.ui
 
 import android.content.Context
 import android.os.Bundle
+import android.text.Html
 import android.view.View
 import com.health.covid19app.R
 import com.health.covid19app.common.Constants.KEY_LANGUAGE
@@ -34,6 +35,7 @@ class CountryCasesActivity : BaseActivity() {
 
         back.setOnClickListener { onBack() }
         choose_language.setOnClickListener { chooseLanguage() }
+        info.setOnClickListener { showInfo() }
     }
 
     fun setTitleToolbar(title: String) {
@@ -58,6 +60,11 @@ class CountryCasesActivity : BaseActivity() {
 
     private fun chooseLanguage() {
         navigateTo(ChooseLanguageFragment().newInstance(), false)
+    }
+
+    private fun showInfo() {
+        showMessage(getString(R.string.info, Html.FROM_HTML_MODE_COMPACT), null)
+
     }
 
 }

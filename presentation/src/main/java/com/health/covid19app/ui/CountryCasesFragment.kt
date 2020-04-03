@@ -1,7 +1,5 @@
 package com.health.covid19app.ui
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -56,14 +54,6 @@ class CountryCasesFragment : BaseFragment() {
             "${getString(R.string.general_informations)} [${country?.updated?.let {
                 Utils.timeInMillisToDate(it)
             }}]"
-
-        source_link.setOnClickListener { goToSourceLink() }
-    }
-
-    private fun goToSourceLink() {
-        val intent = Intent(Intent.ACTION_VIEW)
-        intent.data = Uri.parse(getString(R.string.source_link))
-        startActivity(intent)
     }
 
 }

@@ -7,7 +7,7 @@ interface IView {
 
     fun hideLoading()
 
-    fun showMessage(message: String, listener: Utils.DialogListener)
+    fun showMessage(message: String, listener: Utils.DialogListener?)
 
     fun navigateTo(fragment: BaseFragment, isAdd: Boolean)
 

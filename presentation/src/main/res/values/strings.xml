@@ -17,11 +17,11 @@
     <string name="english_language">Anglais</string>
     <string name="spanish_language">Espanol</string>
     <string name="choose_language_title">Choisissez votre langue</string>
-    <string name="source">Sources : </string>
     <string name="source_link" translatable="false">https://github.com/novelcovid/api</string>
     <string name="ok" translatable="false">Ok</string>
     <string name="error_message_network_not_available">Vous n\'êtes pas connecté à Internet</string>
     <string name="update">Mettre à jour</string>
     <string name="later">Plus tard</string>
     <string name="message_new_version">Une nouvelle version est disponible sur Play Store.</string>
+    <string name="info"><![CDATA[<p><strong>Covid-19Tracking c\'est quoi?</strong></p><br><p>Cette application vous permettra de suivre l\'évolution du Covid-19 dans le monde ainsi qu\'au sein de chaque pays. Ces chiffres sont extraits des données de l\'organisation mondiale de la santé. Restez chez vous.</p><br><p><strong>Développeur</strong></p><br><p>Cette application a été développé par Ali DOUIRI, pour plus d\'information, veuillez consulter mon portfolio : <a href="www.alidouiri.com">www.alidouiri.com</a></p><br><p><strong>Sources</strong></p><br><a href="https://www.worldometers.info/coronavirus">www.worldometers.info/coronavirus</a><br><a href="https://github.com/novelcovid/api">www.github.com/novelcovid/api</a></string>]]></string>
 </resources>

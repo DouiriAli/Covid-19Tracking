@@ -39,7 +39,7 @@ abstract class BaseActivity : AppCompatActivity(), IView {
         loading.visibility = View.GONE
     }
 
-    override fun showMessage(message: String, listener: Utils.DialogListener) {
+    override fun showMessage(message: String, listener: Utils.DialogListener?) {
         Utils.openDialog(this, message, listener)
     }
 

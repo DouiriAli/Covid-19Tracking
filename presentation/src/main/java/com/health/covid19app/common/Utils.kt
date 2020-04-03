@@ -3,6 +3,7 @@ package com.health.covid19app.common
 import android.content.Context
 import android.net.ConnectivityManager
 import android.os.Build
+import android.text.Html
 import android.text.format.DateFormat
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.health.covid19app.R
@@ -35,16 +36,28 @@ object Utils {
     fun openDialog(
         context: Context,
         message: String,
-        listener: DialogListener
+        listener: DialogListener?
     ) {
-        MaterialAlertDialogBuilder(context)
-            .setMessage(message)
-            .setPositiveButton(context.getString(R.string.ok)) { dialog, _ ->
-                listener.onClickPositiveButton()
-                dialog.dismiss()
-            }
-            .setCancelable(false)
-            .show()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            MaterialAlertDialogBuilder(context)
+                .setMessage(Html.fromHtml(message, Html.FROM_HTML_MODE_COMPACT))
+                .setPositiveButton(context.getString(R.string.ok)) { dialog, _ ->
+                    listener?.onClickPositiveButton()
+                    dialog.dismiss()
+                }
+                .setCancelable(false)
+                .show()
+        } else {
+            MaterialAlertDialogBuilder(context)
+                .setMessage(Html.fromHtml(message))
+                .setPositiveButton(context.getString(R.string.ok)) { dialog, _ ->
+                    listener?.onClickPositiveButton()
+                    dialog.dismiss()
+                }
+                .setCancelable(false)
+                .show()
+        }
     }
 
     fun openDialogPlayStore(

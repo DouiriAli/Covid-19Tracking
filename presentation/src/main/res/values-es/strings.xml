@@ -16,9 +16,9 @@
     <string name="english_language">English</string>
     <string name="spanish_language">Espanol</string>
     <string name="choose_language_title">Elige tu idioma</string>
-    <string name="source">Fuentes : </string>
     <string name="error_message_network_not_available">No estás conectado a internet</string>
     <string name="update">Poner al día</string>
     <string name="later">Más tarde</string>
     <string name="message_new_version">Una nueva versión está disponible en Play Store.</string>
+    <string name="info"><![CDATA[<p><strong>¿Qué es el seguimiento de Covid-19?</strong></p><br><p>Esta aplicación te permitirá seguir la evolución de Covid-19 en el mundo y dentro de cada país. Estas cifras están tomadas de datos de la Organización Mundial de la Salud. Quédate en casa.</p><br><p><strong>Desarrollador</strong></p><br><p>Esta aplicación fue desarrollada por Ali DOUIRI, para más información, consulte mi cartera : <a href="www.alidouiri.com">www.alidouiri.com</a></p><br><p><strong>Fuentes</strong></p><br><a href="https://www.worldometers.info/coronavirus">www.worldometers.info/coronavirus</a><br><a href="www.github.com/novelcovid/api">https://github.com/novelcovid/api</a></string>]]></string>
 </resources>

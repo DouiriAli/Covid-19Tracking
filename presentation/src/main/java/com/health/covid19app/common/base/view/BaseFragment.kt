@@ -49,7 +49,7 @@ abstract class BaseFragment : Fragment(), IView {
         activity?.showLoading()
     }
 
-    override fun showMessage(message: String, listener: Utils.DialogListener) {
+    override fun showMessage(message: String, listener: Utils.DialogListener?) {
         activity?.showMessage(message, listener)
     }
 }
