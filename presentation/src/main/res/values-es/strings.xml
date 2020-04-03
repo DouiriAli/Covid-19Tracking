@@ -8,6 +8,7 @@
     <string name="deaths_total">Muertes totales</string>
     <string name="recovred_total">Total de casos curados</string>
     <string name="critical_total">Total de casos críticos</string>
+    <string name="active_total">Total de pacientes infectados</string>
     <string name="choose_country">Selecciona tu pais</string>
     <string name="death_rate">Tasa de mortalidad</string>
     <string name="cure_rate">Tasa de curación</string>
@@ -15,4 +16,6 @@
     <string name="english_language">English</string>
     <string name="spanish_language">Espanol</string>
     <string name="choose_language_title">Elige tu idioma</string>
+    <string name="source">Fuentes : </string>
+    <string name="error_message_network_not_available">No estás conectado a internet</string>
 </resources>

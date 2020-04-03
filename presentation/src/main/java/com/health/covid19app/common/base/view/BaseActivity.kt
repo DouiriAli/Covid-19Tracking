@@ -6,8 +6,8 @@ import android.view.View
 import android.view.WindowManager
 import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.health.covid19app.R
+import com.health.covid19app.common.Utils
 import com.health.covid19app.common.extension.addFragment
 import com.health.covid19app.common.extension.replaceFragment
 import com.health.covid19app.di.Covid19App
@@ -39,14 +39,8 @@ abstract class BaseActivity : AppCompatActivity(), IView {
         loading.visibility = View.GONE
     }
 
-    override fun showMessage(message: String) {
-        MaterialAlertDialogBuilder(this)
-            .setMessage(message)
-            .setPositiveButton("Ok") { dialog, _ ->
-                dialog.dismiss()
-            }
-            .setCancelable(false)
-            .show()
+    override fun showMessage(message: String, listener: Utils.DialogListener) {
+        Utils.openDialog(this, message, listener)
     }
 
     override fun navigateTo(fragment: BaseFragment, isAdd: Boolean) {

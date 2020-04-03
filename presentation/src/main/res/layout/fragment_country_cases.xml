@@ -9,6 +9,32 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:text="@string/source"
+                android:textSize="@dimen/font_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/source_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/spacing_tiny"
+                android:text="@string/source_link"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_medium"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,7 +118,7 @@
                             android:gravity="center_horizontal"
                             android:padding="@dimen/font_normal"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/spacing_normal"
+                            android:textSize="@dimen/font_normal"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
@@ -210,11 +236,11 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/general_informations"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="@dimen/spacing_normal"
-                android:text="@string/general_informations"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/font_normal"
                 android:textStyle="bold" />
@@ -345,6 +371,38 @@
 
                         <TextView
                             android:id="@+id/critical_total"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:textSize="@dimen/font_medium"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/spacing_normal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/active_total"
+                            android:textSize="@dimen/font_medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/active_total"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"

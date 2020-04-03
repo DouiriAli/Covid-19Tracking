@@ -5,9 +5,10 @@
     <string name="cases_today">Confirmed cases</string>
     <string name="deaths_today">Death</string>
     <string name="cases_total">Total confirmed cases</string>
-    <string name="deaths_total">Total Deaths</string>
+    <string name="deaths_total">Total deaths</string>
     <string name="recovred_total">Total cured cases</string>
     <string name="critical_total">Total critical cases</string>
+    <string name="active_total">Total infected patients</string>
     <string name="choose_country">Choose your country</string>
     <string name="death_rate">Death rate</string>
     <string name="cure_rate">Healing rate</string>
@@ -15,4 +16,6 @@
     <string name="english_language">English</string>
     <string name="spanish_language">Espagnol</string>
     <string name="choose_language_title">Choose your language</string>
+    <string name="source">Sources : </string>
+    <string name="error_message_network_not_available">You are not connected to the Internet</string>
 </resources>

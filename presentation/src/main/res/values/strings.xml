@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Covid-19Tracking</string>
-    <string name="covid19">Covid-19</string>
+    <string name="app_name" translatable="false">Covid-19Tracking</string>
+    <string name="covid19" translatable="false">Covid-19</string>
     <string name="today">Aujourd\'hui</string>
     <string name="general_informations">Informations générale</string>
     <string name="cases_today">Cas confirmés</string>
@@ -9,6 +9,7 @@
     <string name="deaths_total">Total des cas Décès</string>
     <string name="recovred_total">Total des cas guéris</string>
     <string name="critical_total">Total des cas critiques</string>
+    <string name="active_total">Total des patients infectés</string>
     <string name="choose_country">Séléctionnez votre pays</string>
     <string name="death_rate">Taux de mortalité</string>
     <string name="cure_rate">Taux de guérison</string>
@@ -16,4 +17,8 @@
     <string name="english_language">Anglais</string>
     <string name="spanish_language">Espanol</string>
     <string name="choose_language_title">Choisissez votre langue</string>
+    <string name="source">Sources : </string>
+    <string name="source_link" translatable="false">https://github.com/novelcovid/api</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="error_message_network_not_available">Vous n\'êtes pas connecté à Internet</string>
 </resources>
