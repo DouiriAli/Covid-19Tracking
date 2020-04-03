@@ -88,6 +88,8 @@ class CountriesFragment : BaseFragment(), CountriesContract.ViewContract,
         startActivity(intent)
     }
 
+    override fun onClickNegativeButton() {}
+
     override fun onDetach() {
         super.onDetach()
         presenter.detachView()

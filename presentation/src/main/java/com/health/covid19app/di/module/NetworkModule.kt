@@ -4,6 +4,7 @@ import com.health.data.remote.RemoteService
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
@@ -21,6 +22,10 @@ class NetworkModule(private val baseUrl: String) {
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
 
         val okHttpBuilder = okHttpClient.newBuilder()
+        val httpLoggingInterceptor = HttpLoggingInterceptor()
+        httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+        okHttpBuilder.addInterceptor(httpLoggingInterceptor)
+
         return Retrofit.Builder()
             .client(okHttpBuilder.build())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

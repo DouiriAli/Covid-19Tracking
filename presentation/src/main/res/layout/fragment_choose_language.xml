@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorWhite"
     android:orientation="vertical">
 
@@ -14,7 +15,6 @@
             android:id="@+id/english_language"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:padding="@dimen/spacing_normal">
 
             <TextView
@@ -24,13 +24,15 @@
                 android:text="@string/english_language"
                 android:textAllCaps="true"
                 android:textSize="@dimen/spacing_normal"
+                android:layout_centerVertical="true"
                 android:textStyle="bold" />
 
-            <RadioButton
+            <android.widget.RadioButton
                 android:id="@+id/english_language_chbx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:button="@drawable/checkbox_states"
                 android:checked="true" />
 
@@ -54,14 +56,16 @@
                 android:layout_alignParentLeft="true"
                 android:text="@string/french_language"
                 android:textAllCaps="true"
+                android:layout_centerVertical="true"
                 android:textSize="@dimen/spacing_normal"
                 android:textStyle="bold" />
 
-            <RadioButton
+            <android.widget.RadioButton
                 android:id="@+id/french_language_ckbx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:button="@drawable/checkbox_states" />
 
         </RelativeLayout>
@@ -76,6 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_centerVertical="true"
             android:padding="@dimen/spacing_normal">
 
             <TextView
@@ -85,9 +90,10 @@
                 android:text="@string/spanish_language"
                 android:textAllCaps="true"
                 android:textSize="@dimen/spacing_normal"
+                android:layout_centerVertical="true"
                 android:textStyle="bold" />
 
-            <RadioButton
+            <android.widget.RadioButton
                 android:id="@+id/spanish_language_chbx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -111,6 +117,8 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_next" />
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_next"
+        app:tint="@color/colorWhite" />
 
 </RelativeLayout>

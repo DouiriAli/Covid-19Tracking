@@ -18,4 +18,7 @@
     <string name="choose_language_title">Elige tu idioma</string>
     <string name="source">Fuentes : </string>
     <string name="error_message_network_not_available">No estás conectado a internet</string>
+    <string name="update">Poner al día</string>
+    <string name="later">Más tarde</string>
+    <string name="message_new_version">Una nueva versión está disponible en Play Store.</string>
 </resources>

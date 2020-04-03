@@ -32,7 +32,11 @@ object Utils {
         return (network != null)
     }
 
-    fun openDialog(context: Context, message: String, listener: DialogListener) {
+    fun openDialog(
+        context: Context,
+        message: String,
+        listener: DialogListener
+    ) {
         MaterialAlertDialogBuilder(context)
             .setMessage(message)
             .setPositiveButton(context.getString(R.string.ok)) { dialog, _ ->
@@ -43,7 +47,36 @@ object Utils {
             .show()
     }
 
+    fun openDialogPlayStore(
+        context: Context,
+        message: String,
+        listener: DialogListener
+    ) {
+        MaterialAlertDialogBuilder(context)
+            .setMessage(message)
+            .setPositiveButton(context.getString(R.string.update)) { dialog, _ ->
+                listener.onClickPositiveButton()
+                dialog.dismiss()
+            }
+            .setNegativeButton(context.getString(R.string.later)) { dialog, _ ->
+                listener.onClickNegativeButton()
+                dialog.dismiss()
+            }
+            .setCancelable(false)
+            .show()
+    }
+
+    fun getCurrentVersion(context: Context): Long {
+        val pInfo = context.packageManager.getPackageInfo(context.packageName, 0)
+        return pInfo.longVersionCode
+    }
+
+    fun getUriPlayStore(context: Context): String =
+        "market://details?id=${context.packageName}"
+
     interface DialogListener {
         fun onClickPositiveButton()
+
+        fun onClickNegativeButton()
     }
 }

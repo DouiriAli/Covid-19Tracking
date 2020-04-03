@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class CountryInfoEntity(
     @SerializedName("_id")
-    val id: Int,
+    val id: Int = 0,
 
     @SerializedName("iso2")
     val iso2: String? = null,
@@ -13,11 +13,11 @@ data class CountryInfoEntity(
     val iso3: String? = null,
 
     @SerializedName("lat")
-    val lat: Double,
+    val lat: Double = 0.0,
 
     @SerializedName("long")
-    val long: Double,
+    val long: Double = 0.0,
 
     @SerializedName("flag")
-    val flag: String
+    val flag: String = ""
 )

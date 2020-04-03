@@ -26,7 +26,7 @@ class CountryAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val country = countries[position]
         holder.country.text = country.countryName
-        holder.flag.loadUrl(country.countryInfo.flag)
+        country.countryInfo?.flag?.let { holder.flag.loadUrl(it) }
     }
 
     override fun getItemCount(): Int =

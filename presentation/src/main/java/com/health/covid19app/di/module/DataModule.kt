@@ -2,9 +2,9 @@ package com.health.covid19app.di.module
 
 import com.health.data.entity.mapper.CountryMapper
 import com.health.data.remote.RemoteService
-import com.health.data.repository.CountryCasesDataStoreFactory
-import com.health.data.repository.CountryCasesRepositoryImpl
-import com.health.domain.repository.CountryCasesRepository
+import com.health.data.repository.Covid19DataStoreFactory
+import com.health.data.repository.Covid19RepositoryImpl
+import com.health.domain.repository.Covid19Repository
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -15,15 +15,15 @@ class DataModule {
     @Provides
     @Singleton
     fun provideCountryCasesRepository(
-        factory: CountryCasesDataStoreFactory,
+        factory: Covid19DataStoreFactory,
         mapper: CountryMapper
-    ): CountryCasesRepository =
-        CountryCasesRepositoryImpl(mapper, factory)
+    ): Covid19Repository =
+        Covid19RepositoryImpl(mapper, factory)
 
     @Provides
     @Singleton
-    fun provideUserDataFactory(remote: RemoteService): CountryCasesDataStoreFactory =
-        CountryCasesDataStoreFactory(remote)
+    fun provideUserDataFactory(remote: RemoteService): Covid19DataStoreFactory =
+        Covid19DataStoreFactory(remote)
 
     @Provides
     @Singleton
