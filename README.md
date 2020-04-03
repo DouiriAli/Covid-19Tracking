@@ -4,10 +4,6 @@ This application will allow you to follow the evolution of Covid-19 in the world
 
 ![](media/screen_covid19.png)
 
-![](media/screen_covid19_data.png)
-
-![](media/screen_covid19_choose_language.png)
-
 # Sources
 
 - [www.worldometers.info/coronavirus]()
