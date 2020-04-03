@@ -20,12 +20,12 @@ android {
     buildTypes {
 
         debug{
-            buildConfigField "String", "BASE_URL", '"https://corona.lmao.ninja/"'
+            buildConfigField "String", "BASE_URL", '"http://www.alidouiri.com/"'
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "BASE_URL", '"https://corona.lmao.ninja/"'
+            buildConfigField "String", "BASE_URL", '"http://www.alidouiri.com/"'
         }
     }
 }
@@ -53,6 +53,9 @@ dependencies {
     implementation retrofitDependencies.retrofit
     implementation retrofitDependencies.retrofitCoverter
     implementation retrofitDependencies.retrofitAdapter
+
+    // Okhttp3
+    implementation okhttpDependencies.loggingInterceptor
 
     // Android Material
     implementation material

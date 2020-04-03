@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.health.covid19app.common.Utils
 import com.health.covid19app.di.component.ActivitySubComponent
 
 abstract class BaseFragment : Fragment(), IView {
@@ -48,7 +49,7 @@ abstract class BaseFragment : Fragment(), IView {
         activity?.showLoading()
     }
 
-    override fun showMessage(message: String) {
-        activity?.showMessage(message)
+    override fun showMessage(message: String, listener: Utils.DialogListener?) {
+        activity?.showMessage(message, listener)
     }
 }

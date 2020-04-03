@@ -93,11 +93,14 @@ class ChooseLanguageFragment : BaseFragment() {
         spanish_language_chbx.isChecked = true
     }
 
-
     private fun next() {
         sharedPref?.put(KEY_LANGUAGE, languageSelected)
         languageSelected?.let { activity?.let { it1 -> Utils.setLocale(it1, it) } }
-        navigateTo(CountriesFragment().newInstance(), false)
+        if (activity?.supportFragmentManager?.backStackEntryCount!! > 1) {
+            activity?.supportFragmentManager?.popBackStack()
+        } else {
+            navigateTo(CountriesFragment().newInstance(), false)
+        }
     }
 
 }

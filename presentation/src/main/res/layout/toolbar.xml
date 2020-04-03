@@ -17,17 +17,35 @@
         android:id="@+id/toolbar_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_toLeftOf="@+id/ll_params"
         android:text="Toolbar Title"
+        android:layout_toRightOf="@+id/back"
         android:textColor="@color/colorBlack"
-        android:textSize="@dimen/font_large"
+        android:textSize="@dimen/font_normal"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/choose_language"
+    <LinearLayout
+        android:id="@+id/ll_params"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:src="@drawable/ic_language" />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/choose_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:src="@drawable/ic_language" />
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
