@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="today">Hoy</string>
-    <string name="general_informations">Información general</string>
+    <string name="general_information">Información general</string>
     <string name="cases_today">Casos confirmados</string>
     <string name="deaths_today">Muerte</string>
     <string name="cases_total">Total de casos confirmados</string>
     <string name="deaths_total">Muertes totales</string>
-    <string name="recovred_total">Total de casos curados</string>
+    <string name="recovered_total">Total de casos curados</string>
     <string name="critical_total">Total de casos críticos</string>
-    <string name="active_total">Total de pacientes infectados</string>
-    <string name="choose_country">Selecciona tu pais</string>
+    <string name="active_total">Total de casos activos</string>
+    <string name="choose_country">Selecciona tu país</string>
     <string name="death_rate">Tasa de mortalidad</string>
-    <string name="cure_rate">Tasa de curación</string>
-    <string name="french_language">Français</string>
-    <string name="english_language">English</string>
-    <string name="spanish_language">Espanol</string>
+    <string name="recovery_rate">Tasa de curación</string>
     <string name="choose_language_title">Elige tu idioma</string>
     <string name="error_message_network_not_available">No estás conectado a internet</string>
     <string name="update">Poner al día</string>
     <string name="later">Más tarde</string>
     <string name="message_new_version">Una nueva versión está disponible en Play Store.</string>
-    <string name="info"><![CDATA[<p><strong>Acerca de Covid-19Tracking</strong></p><br><p>Esta aplicación te permitirá seguir la evolución de Covid-19 en el mundo y dentro de cada país. Estas cifras están tomadas de datos de la Organización Mundial de la Salud. Quédate en casa.</p><br><p><strong>Desarrollador</strong></p><br><p>Esta aplicación fue desarrollada por Ali DOUIRI, para más información, consulte el sitio web : <a href="www.alidouiri.com">www.alidouiri.com</a></p><br><p><strong>Fuentes</strong></p><br><a href="https://www.worldometers.info/coronavirus">www.worldometers.info/coronavirus</a><br><a href="www.github.com/novelcovid/api">https://github.com/novelcovid/api</a></string>]]></string>
+    <string name="info"><![CDATA[<p><strong>Acerca de Covid-19Tracking</strong></p><br><p>Esta aplicación te permitirá seguir la evolución de Covid-19 en el mundo y dentro de cada país. Estas cifras están tomadas de datos de la Organización Mundial de la Salud. <p><font color= #00acee>#QuédateEnCasa</font></p></p><br><p><strong>Desarrollador</strong></p><br><p>Esta aplicación fue desarrollada por Ali DOUIRI, para más información, consulte el sitio web : <a href="www.alidouiri.com">www.alidouiri.com</a></p><br><p><strong>Fuentes</strong></p><br><a href="https://www.worldometers.info/coronavirus">www.worldometers.info/coronavirus</a><br><a href="www.github.com/novelcovid/api">https://github.com/novelcovid/api</a></string>]]></string>
 </resources>
