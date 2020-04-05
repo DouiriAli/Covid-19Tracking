@@ -1,6 +1,6 @@
 # About Covid-19Tracking
 
-This application will allow you to follow the evolution of Covid-19 in the world as well as within each country. These figures are taken from data from the World Health Organization.
+This application allows you to track the evolution of Covid-19 in the world and in each country. These figures are taken from the World Health Organization.
 
 ![](media/screen_covid19.png)
 
