@@ -46,12 +46,12 @@ class CountryCasesFragment : BaseFragment() {
         deaths_today.text = country?.todayDeaths.toString()
         cases_total.text = country?.cases.toString()
         deaths_total.text = country?.deaths.toString()
-        recovred_total.text = country?.recovered.toString()
+        recovered_total.text = country?.recovered.toString()
         critical_total.text = country?.critical.toString()
         active_total.text = country?.active.toString()
 
-        general_informations.text =
-            "${getString(R.string.general_informations)} [${country?.updated?.let {
+        general_information.text =
+            "${getString(R.string.general_information)} [${country?.updated?.let {
                 Utils.timeInMillisToDate(it)
             }}]"
     }

@@ -102,7 +102,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-20dp"
                         android:gravity="center_horizontal"
-                        android:text="@string/cure_rate"
+                        android:text="@string/recovery_rate"
                         android:textSize="@dimen/font_normal"
                         android:textStyle="bold" />
 
@@ -210,7 +210,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/general_informations"
+                android:id="@+id/general_information"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -307,12 +307,44 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="left"
-                            android:text="@string/recovred_total"
+                            android:text="@string/recovered_total"
                             android:textSize="@dimen/font_medium"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/recovred_total"
+                            android:id="@+id/recovered_total"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:textSize="@dimen/font_medium"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/spacing_normal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/active_total"
+                            android:textSize="@dimen/font_medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/active_total"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
@@ -354,37 +386,6 @@
 
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/colorGrey" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="@dimen/spacing_normal"
-                        android:weightSum="3">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
-                            android:text="@string/active_total"
-                            android:textSize="@dimen/font_medium"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/active_total"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="right"
-                            android:textSize="@dimen/font_medium"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
 
                 </LinearLayout>
 
