@@ -17,6 +17,8 @@ import com.health.covid19app.common.base.view.BaseFragment
 import com.health.covid19app.common.extension.get
 import com.health.covid19app.common.extension.newInstance
 import com.health.covid19app.common.extension.put
+import com.health.covid19app.ui.covid19.CountriesFragment
+import com.health.covid19app.ui.covid19.CountryCasesActivity
 import kotlinx.android.synthetic.main.fragment_choose_language.*
 
 class ChooseLanguageFragment : BaseFragment() {

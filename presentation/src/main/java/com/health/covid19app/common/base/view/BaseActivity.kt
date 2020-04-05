@@ -6,11 +6,11 @@ import android.view.View
 import android.view.WindowManager
 import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
+import com.health.covid19app.Covid19App
 import com.health.covid19app.R
 import com.health.covid19app.common.Utils
 import com.health.covid19app.common.extension.addFragment
 import com.health.covid19app.common.extension.replaceFragment
-import com.health.covid19app.di.Covid19App
 import com.health.covid19app.di.component.ActivitySubComponent
 import kotlinx.android.synthetic.main.activity_country_cases.*
 

@@ -1,4 +1,4 @@
-package com.health.covid19app.ui
+package com.health.covid19app.ui.covid19
 
 import android.util.Log
 import com.health.covid19app.common.base.presenter.BasePresenter

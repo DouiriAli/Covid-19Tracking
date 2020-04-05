@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import com.health.covid19app.common.ASyncTransformer
 import com.health.covid19app.di.scope.ActivityScope
-import com.health.covid19app.ui.CountriesContract
-import com.health.covid19app.ui.CountriesPresenter
+import com.health.covid19app.ui.covid19.CountriesContract
+import com.health.covid19app.ui.covid19.CountriesPresenter
 import com.health.covid19app.ui.splash.SplashScreenContract
 import com.health.covid19app.ui.splash.SplashScreenPresenter
 import com.health.domain.repository.Covid19Repository

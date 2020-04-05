@@ -1,4 +1,4 @@
-package com.health.covid19app.ui
+package com.health.covid19app.ui.covid19
 
 import android.view.LayoutInflater
 import android.view.View

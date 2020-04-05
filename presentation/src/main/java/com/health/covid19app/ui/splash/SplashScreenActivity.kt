@@ -13,7 +13,7 @@ import com.health.covid19app.common.Constants.PREF_NAME
 import com.health.covid19app.common.Utils
 import com.health.covid19app.common.base.view.BaseActivity
 import com.health.covid19app.common.extension.get
-import com.health.covid19app.ui.CountryCasesActivity
+import com.health.covid19app.ui.covid19.CountryCasesActivity
 import com.health.domain.model.Version
 import javax.inject.Inject
 
