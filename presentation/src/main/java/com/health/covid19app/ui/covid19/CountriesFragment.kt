@@ -1,4 +1,4 @@
-package com.health.covid19app.ui
+package com.health.covid19app.ui.covid19
 
 import android.content.Context
 import android.content.Intent
@@ -18,7 +18,8 @@ import com.health.domain.model.Country
 import kotlinx.android.synthetic.main.fragment_countries.*
 import javax.inject.Inject
 
-class CountriesFragment : BaseFragment(), CountriesContract.ViewContract,
+class CountriesFragment : BaseFragment(),
+    CountriesContract.ViewContract,
     CountryAdapter.OnCountrySelectedListener, Utils.DialogListener {
 
     override val TAG: String

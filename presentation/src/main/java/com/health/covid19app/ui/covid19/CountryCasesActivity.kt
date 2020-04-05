@@ -1,4 +1,4 @@
-package com.health.covid19app.ui
+package com.health.covid19app.ui.covid19
 
 import android.content.Context
 import android.os.Bundle
@@ -11,6 +11,7 @@ import com.health.covid19app.common.Utils
 import com.health.covid19app.common.base.view.BaseActivity
 import com.health.covid19app.common.extension.get
 import com.health.covid19app.common.extension.newInstance
+import com.health.covid19app.ui.ChooseLanguageFragment
 import kotlinx.android.synthetic.main.toolbar.*
 
 class CountryCasesActivity : BaseActivity() {

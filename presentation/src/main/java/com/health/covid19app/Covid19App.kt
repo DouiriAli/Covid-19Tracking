@@ -1,7 +1,6 @@
-package com.health.covid19app.di
+package com.health.covid19app
 
 import android.app.Application
-import com.health.covid19app.BuildConfig
 import com.health.covid19app.common.base.view.BaseActivity
 import com.health.covid19app.di.component.ActivitySubComponent
 import com.health.covid19app.di.component.AppComponent
