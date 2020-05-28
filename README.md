@@ -6,7 +6,7 @@ This application allows you to track the evolution of Covid-19 in the world and 
 
 You can support me buy contributing code, filing bugs, asking/answering questions, or buying me a coffee.
 
-<a href='ko-fi.com/alidouiri' target='_blank'>
+<a href='https://ko-fi.com/alidouiri' target='_blank'>
   <img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' />
 </a>
 
