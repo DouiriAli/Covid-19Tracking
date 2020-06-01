@@ -12,8 +12,8 @@ You can support me buy contributing code, filing bugs, asking/answering question
 
 # Sources
 
-- [www.worldometers.info/coronavirus]()
-- [www.github.com/novelcovid/api]()
+- [www.worldometers.info/coronavirus]
+- [www.github.com/novelcovid/api]
 
 # License
 
